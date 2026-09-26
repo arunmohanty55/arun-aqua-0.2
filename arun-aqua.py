@@ -11,6 +11,7 @@ def home():
 @app.route("/contact", methods=["POST"])
 def contact():
     name = request.form.get("name")
+    phone = request.form.get("phone")
     message = request.form.get("message")
 
     return f"Thank you {name}! We received your inquiry: {message}"
