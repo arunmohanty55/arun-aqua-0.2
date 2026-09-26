@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Aqua</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Arun Aqua</h1>
+        <p>Pure Water, Healthy Life</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Arun Aqua</h2>
+        <p>Providing clean and pure drinking water.</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+
+        <form action="/contact" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Your Inquiry"
+                required
+            ></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
